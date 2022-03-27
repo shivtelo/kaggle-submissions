@@ -1,7 +1,8 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-
-basepath = './src/main/resources/datasets/titanic/'
+import os
+file_path = os.path.dirname(__file__)
+basepath = file_path + '/resources/'
 
 train = basepath + 'train.csv'
 test = basepath + 'test.csv'
